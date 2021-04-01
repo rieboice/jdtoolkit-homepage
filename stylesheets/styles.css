@@ -4,7 +4,7 @@ body {
 	font-size: 10px;
 	padding: 1em;
 	text-align: center;
-	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: 'Teko', sans-serif;
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 }
 
 p, ul {
-	font-family: "Courier New", monospace;
+	font-family: 'Teko', sans-serif;
 	color: #73003f;
 	max-width: 30em;
 	width: 100%;
@@ -34,9 +34,9 @@ img.logo {
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 1em auto 1em auto;
   padding: 0;
-  width: 100%;
+  width: 50%;
   background-color: #f1f1f1;
   height: 100%; /* Full height */
   }
@@ -58,4 +58,5 @@ li a:hover {
 img {
   max-width: 100%;
   height: auto;
+  border: 10px solid #ffffff;
 }
