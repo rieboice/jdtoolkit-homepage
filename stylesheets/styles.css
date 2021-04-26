@@ -9,7 +9,8 @@ body {
 
 h1 {
 	color: #73003f;
-	font-size: 3em;
+	font-size: 4.5em;
+	text-align: center;
 }
 
 p, ul {
@@ -17,7 +18,7 @@ p, ul {
 	color: #73003f;
 	max-width: 30em;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	margin: 1em auto 1em auto;
 	font-size: 4em;
 	line-height: 1.3;
@@ -25,7 +26,7 @@ p, ul {
 }
 
 img.logo {
-	width: 200%;
+	width: 100%;
 	height: auto;
 	max-width: 800px;
 	max-height: 800px;
@@ -38,6 +39,7 @@ ul {
   margin: 1em auto 1em auto;
   padding: 0;
   width: 50%;
+  text-align: center;
   background-color: #f1f1f1;
   height: 100%; /* Full height */
   }
@@ -52,12 +54,63 @@ li a {
 
 /* Change the link color on hover */
 li a:hover {
-  background-color: #ffc4e3;
-  color: white;
+  background-color: #ffd4f6;
+  color: #db02af;
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border: 10px solid #ffffff;
 }
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* unvisited link */
+a:link {
+  color: #db02af;
+}
+
+/* visited link */
+a:visited {
+  color: #f55bd6;
+}
+
+/* mouse over link */
+a:hover {
+  color: #de0db4;
+}
+
+/* selected link */
+a:active {
+  color: #f567d8;
+} 
